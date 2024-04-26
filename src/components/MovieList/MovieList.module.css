@@ -1,0 +1,29 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.movie {
+  width: 90vw;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  border: 1px solid rgb(42, 36, 150);
+  border-radius: 10px;
+  color: rgb(42, 36, 150);
+  align-items: center;
+}
+.img {
+  width: 80px;
+}
+.title {
+  font-weight: 600;
+  color: rgb(30, 26, 104);
+  margin-bottom: 4px;
+}
+.rate {
+  color: rgb(30, 26, 104);
+}

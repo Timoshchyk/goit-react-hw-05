@@ -1,0 +1,9 @@
+.button {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 6px;
+  color: azure;
+  background-color: rgb(42, 36, 150);
+  border: none;
+  font-size: 14px;
+}

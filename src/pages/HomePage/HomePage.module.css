@@ -1,0 +1,13 @@
+.list {
+  margin-left: 28px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.title {
+  margin-top: 8px;
+  color: rgb(30, 26, 104);
+  text-align: left;
+}

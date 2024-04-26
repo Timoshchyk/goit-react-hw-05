@@ -1,0 +1,58 @@
+.img {
+  width: 300px;
+}
+.all {
+  margin: 12px;
+}
+.button {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  color: azure;
+  background-color: rgb(42, 36, 150);
+  border: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.icon {
+  fill: azure;
+  margin-right: 2px;
+  width: 16px;
+}
+.wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.text {
+  font-size: 18px;
+  color: rgb(5, 4, 26);
+}
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+}
+.nav {
+  display: flex;
+  gap: 12px;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.link {
+  color: rgb(5, 4, 26);
+  font-weight: 400;
+}
+.active {
+  border-bottom: 1px solid rgb(22, 19, 75);
+  color: rgb(22, 19, 75);
+}
+.titles {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}

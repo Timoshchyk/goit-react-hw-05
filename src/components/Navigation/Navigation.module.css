@@ -1,0 +1,25 @@
+.header {
+  width: 95vw;
+  padding: 16px;
+  border-bottom: 2px solid rgb(42, 36, 150);
+}
+.link {
+  color: rgb(42, 36, 150);
+  text-decoration: none;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.active {
+  background-color: rgb(42, 36, 150);
+  padding: 10px;
+  border-radius: 10px;
+  color: azure;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-left: 16px;
+  align-items: center;
+}
