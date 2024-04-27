@@ -39,9 +39,13 @@ export default function MovieDetailsPage() {
     movieDetailsFromApi();
   }, [movieId]);
 
+  useEffect(() => {
+    stateRef.current = location.state;
+  }, [location.state]);
+
   return (
     <div className={css.all}>
-      <Link to={location.state ?? "/movies"} className={css.button}>
+      <Link to={stateRef.current ?? "/movies"} className={css.button}>
         <IoArrowBack className={css.icon} />
         Go back
       </Link>
@@ -70,12 +74,12 @@ export default function MovieDetailsPage() {
       </div>
       <div>
         <nav className={css.nav}>
-          <NavLink to="cast" state={location.state} className={buildLinkClass}>
+          <NavLink to="cast" state={stateRef.current} className={buildLinkClass}>
             Cast
           </NavLink>
           <NavLink
             to="reviews"
-            state={location.state}
+            state={stateRef.current}
             className={buildLinkClass}
           >
             Reviews

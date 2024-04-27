@@ -62,11 +62,17 @@ export default function MoviesPage() {
     setQueryMoviesPage(queryMoviesPage - 1);
   };
 
-  const onEmptyString = () =>
+  const onEmptyString = () => {
+  if (!filter.trim()) {
     toast.error("The field is empty", {
       duration: 4000,
       position: "top-right",
     });
+    return;
+  }
+  changeFilter(filter.trim());
+};
+
 
   const noResults = () =>
     toast.error("There is no results on your query", {
