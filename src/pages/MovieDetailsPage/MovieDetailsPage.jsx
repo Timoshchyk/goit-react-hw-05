@@ -24,6 +24,13 @@ export default function MovieDetailsPage() {
     return clsx(css.link, isActive && css.active);
   };
 
+  const stateRef = useRef(null);
+
+useEffect(() => {
+  stateRef.current = location.state;
+}, [location.state]);
+
+
   useEffect(() => {
     const movieDetailsFromApi = async () => {
       try {
